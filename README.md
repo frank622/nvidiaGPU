@@ -18,16 +18,17 @@
 
 ### Ampere Architecture GPU Specifications
 
-| Parameter | A100 | A100 PCIe | A800 | A800 PCIe |
-|-----------|------|-----------|------|-----------|
-| **Form Factor** | SXM | PCIe | SXM | PCIe |
-| **FP16** | 300/600T | 300/600T | 300/600T | 300/600T |
-| **TF32** | 156/312T | 156/312T | 156/312T | 156/312T |
-| **FP64** | 19.5T | 19.5T | 19.5T | 19.5T |
-| **Memory Capacity** | 80GB HBM2e | 80GB HBM2e | 80GB HBM2e | 80GB HBM2e |
-| **Memory Bandwidth** | 2 TB/s | 2 TB/s | 2 TB/s | 2 TB/s |
-| **Interconnect Bandwidth** | NVLink 600GB/s | PCIe 64GB/s | NVLink 400GB/s | PCIe 64GB/s |
-| **TDP** | 400W | 300W | 400W | 300W |
+| Parameter | A100 | A100 PCIe | A800 | A800 PCIe | A10 | RTX 3090 |
+|-----------|------|-----------|------|-----------|-----|----------|
+| **Form Factor** | SXM | PCIe | SXM | PCIe | PCIe | PCIe |
+| **FP16** | 300/600T | 300/600T | 300/600T | 300/600T | 125T | 35.6T |
+| **TF32** | 156/312T | 156/312T | 156/312T | 156/312T | 62.5T | 17.8T |
+| **FP64** | 19.5T | 19.5T | 19.5T | 19.5T | - | - |
+| **Memory Capacity** | 80GB HBM2e | 80GB HBM2e | 80GB HBM2e | 80GB HBM2e | 24GB GDDR6 | 24GB GDDR6X |
+| **Memory Bandwidth** | 2 TB/s | 2 TB/s | 2 TB/s | 2 TB/s | 600 GB/s | 936 GB/s |
+| **Interconnect Bandwidth** | NVLink 600GB/s | PCIe 64GB/s | NVLink 400GB/s | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s |
+| **TDP** | 400W | 300W | 400W | 300W | 150W | 350W |
+
 
 
 ### Hopper Architecture GPU Specifications
