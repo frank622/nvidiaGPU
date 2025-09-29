@@ -45,16 +45,17 @@
 
 ### Ada Architecture GPU Specifications
 
-| Parameter | RTX 4090 | RTX 4090D | L40S | L40 | L20 | L4 |
-|-----------|----------|-----------|------|-----|-----|----|
-| **Form Factor** | PCIe | PCIe | PCIe | PCIe | PCIe | PCIe |
-| **FP16** | 165/330T | 147/294T | 366/733T | 181/362T | 119.5T | 121/242T |
-| **TF32** | 82.6/165.2T | 73.5/147T | 181/366T | 90.5/181T | 59.8T | 60.5/121T |
+| Parameter | L40S | L40 | L20 | L4 | L2 | RTX 4090 | RTX 4090D |
+|-----------|------|-----|-----|----|----|----------|-----------|
+| **Form Factor** | PCIe | PCIe | PCIe | PCIe | PCIe | PCIe | PCIe |
+| **FP16** | 366/733T | 181/362T | 119.5T | 121/242T | 96.5T | 165/330T | 147/294T |
+| **TF32** | 181/366T | 90.5/181T | 59.8T | 60.5/121T | 48.3T | 82.6/165.2T | 73.5/147T |
 | **FP64** | - | - | - | - | - | - | - |
-| **Memory Capacity** | 24GB GDDR6x | 24GB GDDR6x | 48GB GDDR6x | 48GB GDDR6x | 48GB GDDR6x | 24GB GDDR6x |
-| **Memory Bandwidth** | 1 TB/s | 1 TB/s | 864 GB/s | 864 GB/s | 864 GB/s | 300 GB/s |
-| **Interconnect Bandwidth** | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s |
-| **TDP** | 450W | 425W | 350W | 300W | 275W | 72W |
+| **Memory Capacity** | 48GB GDDR6x | 48GB GDDR6x | 48GB GDDR6x | 24GB GDDR6x | 24GB GDDR6x | 24GB GDDR6x | 24GB GDDR6x |
+| **Memory Bandwidth** | 864 GB/s | 864 GB/s | 864 GB/s | 300 GB/s | 300 GB/s | 1 TB/s | 1 TB/s |
+| **Interconnect Bandwidth** | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s |
+| **TDP** | 350W | 300W | 275W | 72W | 72W | 450W | 425W |
+
 
 ### Blackwell Architecture GPU Specifications
 
