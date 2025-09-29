@@ -14,4 +14,4 @@ GenAI-focused NVIDIA GPU Overview
 | 2022 | Hopper| TSMC 4N，Gen4 Nvlink,Gen4 Tensor Cores,Gen2 MIG,FP8 (E5M2/E4M3),Gen1 Transformer Engine,HBM3/HBM3e | H100,H20 |
 | 2022 | Ada Lovelace| TSMC 4N,Gen3 RT cores| L40s,GTX4090 |
 | 2024 | Blackwell| TSMC 4NP,Gen5 Nvlink,Gen5 Tensor Cores,Gen2 Transformer Engine,FP4,Gen4 RT cores| B100/GH200/GB200,GTX5090 |
-| 2026 | Rubin|TSMC 3nm,HBM4  Rxxx |
+| 2026 | Rubin|TSMC 3nm,HBM4| R? |
