@@ -46,28 +46,28 @@
 
 ### Ada Architecture GPU Specifications
 
-| Parameter | L40S | L40 | L20 | L4 | L2 | RTX 4090 | RTX 4090D |
-|-----------|------|-----|-----|----|----|----------|-----------|
-| **Form Factor** | PCIe | PCIe | PCIe | PCIe | PCIe | PCIe | PCIe |
-| **FP16** | 366/733T | 181/362T | 119.5T | 121/242T | 96.5T | - | - |
-| **TF32** | 181/366T | 90.5/181T | 59.8T | 60.5/121T | 48.3T | - | - |
-| **FP64** | - | - | - | - | - | - | - |
-| **Memory Capacity** | 48GB GDDR6x | 48GB GDDR6x | 48GB GDDR6x | 24GB GDDR6x | 24GB GDDR6x | 24GB GDDR6x | 24GB GDDR6x |
-| **Memory Bandwidth** | 864 GB/s | 864 GB/s | 864 GB/s | 300 GB/s | 300 GB/s | 1 TB/s | 1 TB/s |
-| **Interconnect Bandwidth** | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s |
-| **TDP** | 350W | 300W | 275W | 72W | 72W | 450W | 425W |
+| Parameter | L40S | L40 | L20 | L4 | L2 | RTX 4090 |
+|-----------|------|-----|-----|----|----|----------|
+| **Form Factor** | PCIe | PCIe | PCIe | PCIe | PCIe | PCIe |
+| **FP16** | 366/733T | 181/362T | 119.5T | 121/242T | 96.5T | - |
+| **TF32** | 181/366T | 90.5/181T | 59.8T | 60.5/121T | 48.3T | - |
+| **FP64** | - | - | - | - | - | - |
+| **Memory Capacity** | 48GB GDDR6x | 48GB GDDR6x | 48GB GDDR6x | 24GB GDDR6x | 24GB GDDR6x | 24GB GDDR6x |
+| **Memory Bandwidth** | 864 GB/s | 864 GB/s | 864 GB/s | 300 GB/s | 300 GB/s | 1 TB/s |
+| **Interconnect Bandwidth** | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s |
+| **TDP** | 350W | 300W | 275W | 72W | 72W | 450W |
 
 
 ### Blackwell Architecture GPU Specifications
 
-| Parameter | GB300 | B300 | GB200 | B200 | B100 | RTX 5090 | 5090D |
-|-----------|-------|------|-------|------|------|----------|-------|
-| **Form Factor** | Multi-chip | SXM | Multi-chip | SXM | SXM | PCIe 5.0 | PCIe 5.0 |
-| **FP16** | 5/10P | 2.25/4.5P | 5/10P| 2.25/4.5P| 1.8/3.5P | -| - |
-| **TF32** | 2.5/5P| 1.12/2.25P | 2.5/5P| 1.12/2.25P| 0.9/1.8P | - | - |
-| **FP64** | 90T | 40T | 90T | 40T | 30T | - | - |
-| **Memory Capacity** | 576GB HBM3e | 288GB HBM3e | 384GB HBM3e | 192GB HBM3e | 192GB HBM3e | 32GB GDDR7 | 32GB GDDR7 |
-| **Memory Bandwidth** | 16 TB/s | 8 TB/s | 16 TB/s | 8 TB/s | 8 TB/s | 1.8 TB/s | 1.8 TB/s |
-| **Interconnect Bandwidth** | NVLink 3.6 TB/s | NVLink 1.8 TB/s | NVLink 3.6 TB/s | NVLink 1.8 TB/s | NVLink 1.8 TB/s | PCIe 128GB/s | PCIe 128GB/s |
-| **TDP** | 1400W | 1400W | 2700W | 1000W | 700W | 575W | 575W |
+| Parameter | GB300 | B300 | GB200 | B200 | B100 | RTX 5090 |
+|-----------|-------|------|-------|------|------|----------|
+| **Form Factor** | Multi-chip | SXM | Multi-chip | SXM | SXM | PCIe 5.0 |
+| **FP16** | 5/10P | 2.25/4.5P | 5/10P| 2.25/4.5P| 1.8/3.5P | -| 
+| **TF32** | 2.5/5P| 1.12/2.25P | 2.5/5P| 1.12/2.25P| 0.9/1.8P | - |
+| **FP64** | 90T | 40T | 90T | 40T | 30T | - |
+| **Memory Capacity** | 576GB HBM3e | 288GB HBM3e | 384GB HBM3e | 192GB HBM3e | 192GB HBM3e | 32GB GDDR7 | 
+| **Memory Bandwidth** | 16 TB/s | 8 TB/s | 16 TB/s | 8 TB/s | 8 TB/s | 1.8 TB/s |
+| **Interconnect Bandwidth** | NVLink 3.6 TB/s | NVLink 1.8 TB/s | NVLink 3.6 TB/s | NVLink 1.8 TB/s | NVLink 1.8 TB/s | PCIe 128GB/s | 
+| **TDP** | 1400W | 1400W | 2700W | 1000W | 700W | 575W |
 
