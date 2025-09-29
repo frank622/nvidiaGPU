@@ -1,7 +1,6 @@
-# nvidiaGPU
-GenAI-focused NVIDIA GPU Overview
+### GenAI-focused NVIDIA GPU Overview
 
-| Release Date | Micro Architecture | Note | Key Models|
+| Release Date | Micro Architecture | Notes | Key Models|
 |-------|---------|---------|---------|
 | 2006 | Tesla | 90nm |  |
 | 2010 | Fermi | 40/28nm |  |
@@ -15,3 +14,58 @@ GenAI-focused NVIDIA GPU Overview
 | 2022 | Ada Lovelace|TSMC 4N,Gen3 RT cores| L40s,GTX4090 |
 | 2024 | Blackwell| TSMC 4NP,Gen5 Nvlink,Gen5 Tensor Cores,Gen2 Transformer Engine,FP4,Gen4 RT cores| B100/GH200/GB200,GTX5090 |
 | 2026 | Rubin|TSMC 3nm,HBM4| R? |
+
+
+### Ampere Architecture GPU Specifications
+
+| Parameter | A100 | A100 PCIe | A800 | A800 PCIe |
+|-----------|------|-----------|------|-----------|
+| **Form Factor** | SXM | PCIe | SXM | PCIe |
+| **FP16** | 300/600T | 300/600T | 300/600T | 300/600T |
+| **TF32** | 156/312T | 156/312T | 156/312T | 156/312T |
+| **FP64** | 19.5T | 19.5T | 19.5T | 19.5T |
+| **Memory Capacity** | 80GB HBM2e | 80GB HBM2e | 80GB HBM2e | 80GB HBM2e |
+| **Memory Bandwidth** | 2 TB/s | 2 TB/s | 2 TB/s | 2 TB/s |
+| **Interconnect Bandwidth** | NVLink 600GB/s | PCIe 64GB/s | NVLink 400GB/s | PCIe 64GB/s |
+| **TDP** | 400W | 300W | 400W | 300W |
+
+
+### Hopper Architecture GPU Specifications
+
+| Parameter | H20 Standard | H20 Large Memory | H200 | H100 | H100 PCIe | H800 | H800 PCIe |
+|-----------|--------------|------------------|------|------|-----------|------|-----------|
+| **Form Factor** | SXM | SXM | SXM | SXM | PCIe | SXM | PCIe |
+| **FP16** | 148T | 148T | 1000/2000T | 1000/2000T | 800/1600T | 1000/2000T | 800/1600T |
+| **TF32** | 59.8T | 59.8T | 495/989T | 495/989T | 378/756T | 495/989T | 378/756T |
+| **FP64** | - | - | 67T | 67T | 51T | 1000T | 800T |
+| **Memory Capacity** | 96GB HBM3 | 141GB HBM3e | 141GB HBM3e | 80GB HBM3 | 80GB HBM3 | 80GB HBM3 | 80GB HBM3 |
+| **Memory Bandwidth** | 4 TB/s | 4.8 TB/s | 4.8 TB/s | 3.35 TB/s | 2 TB/s | 3.35 TB/s | 2 TB/s |
+| **Interconnect Bandwidth** | NVLink 900GB/s | NVLink 900GB/s | NVLink 900GB/s | NVLink 900GB/s | PCIe 128GB/s | NVLink 400GB/s | PCIe 128GB/s |
+| **TDP** | 400W | 400W | 700W | 700W | 350W | 700W | 350W |
+
+### Ada Architecture GPU Specifications
+
+| Parameter | RTX 4090 | RTX 4090D | L40S | L40 | L20 | L4 |
+|-----------|----------|-----------|------|-----|-----|----|
+| **Form Factor** | PCIe | PCIe | PCIe | PCIe | PCIe | PCIe |
+| **FP16** | 165/330T | 147/294T | 366/733T | 181/362T | 119.5T | 121/242T |
+| **TF32** | 82.6/165.2T | 73.5/147T | 181/366T | 90.5/181T | 59.8T | 60.5/121T |
+| **FP64** | - | - | - | - | - | - | - |
+| **Memory Capacity** | 24GB GDDR6x | 24GB GDDR6x | 48GB GDDR6x | 48GB GDDR6x | 48GB GDDR6x | 24GB GDDR6x |
+| **Memory Bandwidth** | 1 TB/s | 1 TB/s | 864 GB/s | 864 GB/s | 864 GB/s | 300 GB/s |
+| **Interconnect Bandwidth** | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s |
+| **TDP** | 450W | 425W | 350W | 300W | 275W | 72W |
+
+### Blackwell Architecture GPU Specifications
+
+| Parameter | GB300 | B300 | GB200 | B200 | B100 | RTX 5090 | 5090D |
+|-----------|-------|------|-------|------|------|----------|-------|
+| **Form Factor** | Multi-chip | SXM | Multi-chip | SXM | SXM | PCIe 5.0 | PCIe 5.0 |
+| **FP16** | 5/10P | 2.25/4.5P | 5/10P| 2.25/4.5P| 1.8/3.5P | 210/420T | 150/297T |
+| **TF32** | 2.5/5P| 1.12/2.25P | 2.5/5P| 1.12/2.25P| 0.9/1.8P | 1.25/32P | 1/16P |
+| **FP64** | 90T | 40T | 90T | 40T | 30T | - | - |
+| **Memory Capacity** | 576GB HBM3e | 288GB HBM3e | 384GB HBM3e | 192GB HBM3e | 192GB HBM3e | 32GB GDDR7 | 32GB GDDR7 |
+| **Memory Bandwidth** | 16 TB/s | 8 TB/s | 16 TB/s | 8 TB/s | 8 TB/s | 1.8 TB/s | 1.8 TB/s |
+| **Interconnect Bandwidth** | NVLink 3.6 TB/s | NVLink 1.8 TB/s | NVLink 3.6 TB/s | NVLink 1.8 TB/s | NVLink 1.8 TB/s | PCIe 128GB/s | PCIe 128GB/s |
+| **TDP** | 1400W | 1400W | 2700W | 1000W | 700W | 575W | 575W |
+
