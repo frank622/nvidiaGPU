@@ -21,8 +21,8 @@
 | Parameter | A100 | A100 PCIe | A800 | A800 PCIe | A10 | RTX 3090 |
 |-----------|------|-----------|------|-----------|-----|----------|
 | **Form Factor** | SXM | PCIe | SXM | PCIe | PCIe | PCIe |
-| **FP16** | 300/600T | 300/600T | 300/600T | 300/600T | 125T/250T | 35.6T |
-| **TF32** | 156/312T | 156/312T | 156/312T | 156/312T | 62.5T/125T | 17.8T |
+| **FP16** | 300/600T | 300/600T | 300/600T | 300/600T | 125T/250T | -|
+| **TF32** | 156/312T | 156/312T | 156/312T | 156/312T | 62.5T/125T | -|
 | **FP64** | 19.5T | 19.5T | 19.5T | 19.5T | - | - |
 | **Memory Capacity** | 80GB HBM2e | 80GB HBM2e | 80GB HBM2e | 80GB HBM2e | 24GB GDDR6 | 24GB GDDR6X |
 | **Memory Bandwidth** | 2 TB/s | 2 TB/s | 2 TB/s | 2 TB/s | 600 GB/s | 936 GB/s |
@@ -49,8 +49,8 @@
 | Parameter | L40S | L40 | L20 | L4 | L2 | RTX 4090 | RTX 4090D |
 |-----------|------|-----|-----|----|----|----------|-----------|
 | **Form Factor** | PCIe | PCIe | PCIe | PCIe | PCIe | PCIe | PCIe |
-| **FP16** | 366/733T | 181/362T | 119.5T | 121/242T | 96.5T | 165/330T | 147/294T |
-| **TF32** | 181/366T | 90.5/181T | 59.8T | 60.5/121T | 48.3T | 82.6/165.2T | 73.5/147T |
+| **FP16** | 366/733T | 181/362T | 119.5T | 121/242T | 96.5T | - | - |
+| **TF32** | 181/366T | 90.5/181T | 59.8T | 60.5/121T | 48.3T | - | - |
 | **FP64** | - | - | - | - | - | - | - |
 | **Memory Capacity** | 48GB GDDR6x | 48GB GDDR6x | 48GB GDDR6x | 24GB GDDR6x | 24GB GDDR6x | 24GB GDDR6x | 24GB GDDR6x |
 | **Memory Bandwidth** | 864 GB/s | 864 GB/s | 864 GB/s | 300 GB/s | 300 GB/s | 1 TB/s | 1 TB/s |
