@@ -12,7 +12,7 @@
 | 2020 | Ampere |7nm,Gen3 Nvlink,Gen3 Tensor Cores,Gen2 RT cores,Gen1 MIG,TF16/TF32/BF16,HBM2e| A100,A10,GTX3090 |
 | 2022 | Hopper|TSMC 4N，Gen4 Nvlink,Gen4 Tensor Cores,Gen2 MIG,FP8 (E5M2/E4M3),Gen1 Transformer Engine,HBM3/HBM3e | H100,H20 |
 | 2022 | Ada Lovelace|TSMC 4N,Gen3 RT cores| L40s,GTX4090 |
-| 2024 | Blackwell| TSMC 4NP,Gen5 Nvlink,Gen5 Tensor Cores,Gen2 Transformer Engine,FP4,Gen4 RT cores| B100/GH200/GB200,GTX5090 |
+| 2024 | Blackwell| TSMC 4NP,Gen5 Nvlink,Gen5 Tensor Cores,Gen2 Transformer Engine,FP6/FP4,Gen4 RT cores| B100/GH200/GB200,GTX5090 |
 | 2026 | Rubin|TSMC 3nm,HBM4| R? |
 
 
@@ -30,19 +30,20 @@
 | **TDP** | 400W | 300W | 400W | 300W | 150W | 350W |
 
 
-
 ### Hopper Architecture GPU Specifications
 
-| Parameter | H20 Standard | H20 Large Memory | H200 | H100 | H100 PCIe | H800 | H800 PCIe |
-|-----------|--------------|------------------|------|------|-----------|------|-----------|
-| **Form Factor** | SXM | SXM | SXM | SXM | PCIe | SXM | PCIe |
-| **FP16** | 148T | 148T | 1000/2000T | 1000/2000T | 800/1600T | 1000/2000T | 800/1600T |
-| **TF32** | 59.8T | 59.8T | 495/989T | 495/989T | 378/756T | 495/989T | 378/756T |
-| **FP64** | - | - | 67T | 67T | 51T | 1000T | 800T |
-| **Memory Capacity** | 96GB HBM3 | 141GB HBM3e | 141GB HBM3e | 80GB HBM3 | 80GB HBM3 | 80GB HBM3 | 80GB HBM3 |
-| **Memory Bandwidth** | 4 TB/s | 4.8 TB/s | 4.8 TB/s | 3.35 TB/s | 2 TB/s | 3.35 TB/s | 2 TB/s |
-| **Interconnect Bandwidth** | NVLink 900GB/s | NVLink 900GB/s | NVLink 900GB/s | NVLink 900GB/s | PCIe 128GB/s | NVLink 400GB/s | PCIe 128GB/s |
-| **TDP** | 400W | 400W | 700W | 700W | 350W | 700W | 350W |
+| Parameter | GH200 | H200 | H100 | H100 PCIe | H800 | H800 PCIe | H20 Std | H20 Large Memory |
+|-----------|-------|------|------|-----------|------|-----------|---------|------------------|
+| **Form Factor** | 1*（H200+Grace）| SXM | SXM | PCIe | SXM | PCIe | SXM | SXM |
+| **FP16** | 1000/2000T | 1000/2000T | 1000/2000T | 800/1600T | 1000/2000T | 800/1600T | 148T | 148T |
+| **TF32** | 495/989T | 495/989T | 495/989T | 378/756T | 495/989T | 378/756T | 59.8T | 59.8T |
+| **FP64** | 67T | 67T | 67T | 51T | 1000T | 800T | - | - |
+| **Memory Capacity** | 96GB HBM3 | 141GB HBM3e | 80GB HBM3 | 80GB HBM3 | 80GB HBM3 | 80GB HBM3 | 96GB HBM3 | 141GB HBM3e |
+| **Memory Bandwidth** | 4 TB/s | 4.8 TB/s | 3.35 TB/s | 2 TB/s | 3.35 TB/s | 2 TB/s | 4 TB/s | 4.8 TB/s |
+| **Interconnect Bandwidth** | NVLink 900GB/s | NVLink 900GB/s | NVLink 900GB/s | PCIe 128GB/s | NVLink 400GB/s | PCIe 128GB/s | NVLink 900GB/s | NVLink 900GB/s |
+| **TDP** | 700W | 700W | 700W | 350W | 700W | 350W | 400W | 400W |
+
+GH200 NVL72=18*Compute Node（4 Blackwell GPUs+2 Grace CPUs）;72 Hopper GPUs
 
 ### Ada Architecture GPU Specifications
 
@@ -60,14 +61,19 @@
 
 ### Blackwell Architecture GPU Specifications
 
-| Parameter | GB300 | B300 | GB200 | B200 | B100 | RTX 5090 |
+| Parameter | GB300 | GB200| B300 | B200 | B100 | RTX 5090 |
 |-----------|-------|------|-------|------|------|----------|
-| **Form Factor** | Multi-chip | SXM | Multi-chip | SXM | SXM | PCIe 5.0 |
-| **FP16** | 5/10P | 2.25/4.5P | 5/10P| 2.25/4.5P| 1.8/3.5P | -| 
-| **TF32** | 2.5/5P| 1.12/2.25P | 2.5/5P| 1.12/2.25P| 0.9/1.8P | - |
-| **FP64** | 90T | 40T | 90T | 40T | 30T | - |
-| **Memory Capacity** | 576GB HBM3e | 288GB HBM3e | 384GB HBM3e | 192GB HBM3e | 192GB HBM3e | 32GB GDDR7 | 
-| **Memory Bandwidth** | 16 TB/s | 8 TB/s | 16 TB/s | 8 TB/s | 8 TB/s | 1.8 TB/s |
-| **Interconnect Bandwidth** | NVLink 3.6 TB/s | NVLink 1.8 TB/s | NVLink 3.6 TB/s | NVLink 1.8 TB/s | NVLink 1.8 TB/s | PCIe 128GB/s | 
-| **TDP** | 1400W | 1400W | 2700W | 1000W | 700W | 575W |
+| **Form Factor** | 2*Blackwell Ultra GPUs+1*Grace CPUs） | 2*Blackwell GPUs+1*Grace CPUs）| 2 Die | 2 Die  | 2 Die  | PCIe 5.0 |
+| **FP4 Dense/Sparse** | 180/360P | 180/360P | 5/10P| 2.25/4.5P| 1.8/3.5P | -| 
+| **FP8 Dense/Sparse** | 180/360P | 180/360P | 5/10P| 2.25/4.5P| 1.8/3.5P | -| 
+| **FP16/BF16 Dense/Sparse** | 180/360P | 180/360P | 5/10P| 2.25/4.5P| 1.8/3.5P | -| 
+| **TF32 Dense/Sparse** | 90/180P| 90/180P | 2.5/5P| 1.12/2.25P| 0.9/1.8P | - |
+| **FP64/FP64** | 100T | 2,880T | 90T | 40T | 30T | - |
+| **Memory Capacity** | 72*288GB HBM3e | 72*192GB HBM3e | 384GB HBM3e | 192GB HBM3e | 192GB HBM3e | 32GB GDDR7 | 
+| **Memory Bandwidth** | 576TB/s | up to 576TB/s | 16 TB/s | 8 TB/s | 8 TB/s | 1.8 TB/s |
+| **Interconnect Bandwidth** | - | -| NVLink 3.6 TB/s | NVLink 1.8 TB/s | NVLink 1.8 TB/s | PCIe 128GB/s | 
+| **TDP** | - | -| 2700W | 1000W | 700W | 575W |
+
+GB200 NVL72=18*Compute Node（4 Blackwell GPUs+2 Grace CPUs）;72 Blackwell GPUs
+GB300 NVL72=18*Compute Node（4 Blackwell Ultra GPUs+2 Grace CPUs）;72 Blackwell Ultra GPUs
 
