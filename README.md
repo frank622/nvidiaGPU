@@ -44,6 +44,8 @@
 | **Interconnect Bandwidth** | NVLink 900GB/s | NVLink 900GB/s | NVLink 900GB/s | PCIe 128GB/s | NVLink 400GB/s | PCIe 128GB/s | NVLink 900GB/s | NVLink 900GB/s |
 | **TDP** | - | 700W | 700W | 350W | 700W | 350W | 400W | 400W |
 
+- HGX H100/H200 = 8 GPU soluton package
+- GH200 = Grace CPU+H200 GPU
 - GH200 NVL2 fully connects two GH200 Superchips with NVLink
 - GH200 NVL32 = 32 * GH200  
 - GH200 SuperPod = 256 * GH200
@@ -73,8 +75,11 @@
 | **TDP** | - | 2700W   | - | 1000W | 700W | 575W |
 
 - B200 Superchip,2 Die,2*Blackwell GPU
+  
+- HGX B200=8x NVIDIA Blackwell GPUs (AWS p6-b200.48xlarge?)
+- HGX B300=8x NVIDIA Blackwell Ultra GPUs
+  
 - GB200 Superchip,2*Blackwell GPU+1*Grace CPU
-- HGX B200=2*[2*Blackwell Superchip(2 Die)+1*Grace CPU)]->8*Blackwell GPUs+2*Grace CPUs (AWS p6-b200.48xlarge?)
 - GB200 NVL72=32*GB200=18*Compute Node（4 Blackwell GPUs+2 Grace CPU）->72 Blackwell GPUs+36*Grace CPUs (AWS p6e-gb200.36xlarge,u-p6e-gb200x36,u-p6e-gb200x72?)
 - GB200 SuperPod=288*GB200
 - GB300 NVL72=18*Compute Node（4 Blackwell Ultra GPUs+2 Grace CPU）->72 Blackwell Ultra GPUs
