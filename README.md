@@ -62,7 +62,7 @@
 | **TDP** | 350W | 300W | 275W | 72W | 450W |
 
 
-### Blackwell Architecture GPU Specifications
+### Blackwell Architecture GPU Specifications(draft)
 
 | Parameter | GB300 | GB200| B300 | B200 | B100 | RTX 5090 |
 |-----------|-------|------|-------|------|------|----------|
@@ -77,5 +77,6 @@
 - HGX B200=2*[2*Blackwell Superchip(2 Die)+1*Grace CPU)]->8*Blackwell GPUs+2*Grace CPUs (AWS p6-b200.48xlarge?)
 - GB200 NVL72=32*GB200=18*Compute Node（4 Blackwell GPUs+2 Grace CPU）->72 Blackwell GPUs+36*Grace CPUs (AWS p6e-gb200.36xlarge,u-p6e-gb200x36,u-p6e-gb200x72?)
 - GB200 SuperPod=288*GB200
-- GB300 NVL72=18*Compute Node（4 Blackwell Ultra GPUs+2 Grace CPU）;72 Blackwell Ultra GPUs
+- GB300 NVL72=18*Compute Node（4 Blackwell Ultra GPUs+2 Grace CPU）->72 Blackwell Ultra GPUs
+- blackwell-architecture: https://resources.nvidia.com/en-us-blackwell-architecture
 
