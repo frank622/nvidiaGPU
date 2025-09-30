@@ -35,15 +35,16 @@
 | Parameter | GH200 | H200 | H100 | H100 PCIe | H800 | H800 PCIe | H20 Std | H20 Large Memory |
 |-----------|-------|------|------|-----------|------|-----------|---------|------------------|
 | **Form Factor** | 1*（H200+Grace）| SXM | SXM | PCIe | SXM | PCIe | SXM | SXM |
-| **FP16** | 1000/2000T | 1000/2000T | 1000/2000T | 800/1600T | 1000/2000T | 800/1600T | 148T | 148T |
-| **TF32** | 495/989T | 495/989T | 495/989T | 378/756T | 495/989T | 378/756T | 59.8T | 59.8T |
-| **FP64** | 67T | 67T | 67T | 51T | 1000T | 800T | - | - |
-| **Memory Capacity** | 96GB HBM3 | 141GB HBM3e | 80GB HBM3 | 80GB HBM3 | 80GB HBM3 | 80GB HBM3 | 96GB HBM3 | 141GB HBM3e |
-| **Memory Bandwidth** | 4 TB/s | 4.8 TB/s | 3.35 TB/s | 2 TB/s | 3.35 TB/s | 2 TB/s | 4 TB/s | 4.8 TB/s |
+| **FP8** | 1,979/3,958T | 1,979/3,958T | 1,979/3,958T | 800/1600T | 1000/2000T | 800/1600T | 148T | 148T |
+| **FP16** | 990/1,979T | 990/1,979T  | 990/1,979T | 800/1600T | 1000/2000T | 800/1600T | 148T | 148T |
+| **TF32** | 494/989T | 495/989T | 495/989T | 378/756T | 495/989T | 378/756T | 59.8T | 59.8T |
+| **FP64** | 34T | 34T | 34T | 51T | 1000T | 800T | - | - |
+| **Memory Capacity** | 96/144G HBM3 | 141GB HBM3e | 80GB HBM3 | 80GB HBM3 | 80GB HBM3 | 80GB HBM3 | 96GB HBM3 | 141GB HBM3e |
+| **Memory Bandwidth** | 4/4.9TB/s | 4.8 TB/s | 3.35 TB/s | 2 TB/s | 3.35 TB/s | 2 TB/s | 4 TB/s | 4.8 TB/s |
 | **Interconnect Bandwidth** | NVLink 900GB/s | NVLink 900GB/s | NVLink 900GB/s | PCIe 128GB/s | NVLink 400GB/s | PCIe 128GB/s | NVLink 900GB/s | NVLink 900GB/s |
 | **TDP** | 700W | 700W | 700W | 350W | 700W | 350W | 400W | 400W |
 
-GH200 NVL72=18*Compute Node（4 Blackwell GPUs+2 Grace CPUs）;72 Hopper GPUs
+The NVIDIA GH200 NVL2 fully connects two GH200 Superchips with NVLink
 
 ### Ada Architecture GPU Specifications
 
@@ -75,5 +76,6 @@ GH200 NVL72=18*Compute Node（4 Blackwell GPUs+2 Grace CPUs）;72 Hopper GPUs
 | **TDP** | - | -| 2700W | 1000W | 700W | 575W |
 
 GB200 NVL72=18*Compute Node（4 Blackwell GPUs+2 Grace CPUs）;72 Blackwell GPUs
+
 GB300 NVL72=18*Compute Node（4 Blackwell Ultra GPUs+2 Grace CPUs）;72 Blackwell Ultra GPUs
 
