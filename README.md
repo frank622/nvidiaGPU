@@ -23,11 +23,11 @@
 | **Form Factor** | SXM | PCIe | SXM | PCIe | PCIe | PCIe |
 | **FP16** | 312/624T | 312/624T | 312/624T | 312/624T | 125T/250T | -|
 | **TF32** | 156/312T | 156/312T | 156/312T | 156/312T | 62.5T/125T | -|
-| **FP64** | 19.5T | 19.5T | 19.5T | 19.5T | - | - |
-| **Memory Capacity** | 80GB HBM2e | 80GB HBM2e | 80GB HBM2e | 80GB HBM2e | 24GB GDDR6 | 24GB GDDR6X |
-| **Memory Bandwidth** | 2 TB/s | 2 TB/s | 2 TB/s | 2 TB/s | 600 GB/s | 936 GB/s |
+| **FP64** | 9.7T |9.7T| 9.7T | 9.7T | - | - |
+| **Memory Capacity** | 40HBM2/80GB HBM2e | 40HBM2/80GB HBM2e  | 80GB HBM2e | 40HBM2/80GB HBM2e| 24GB GDDR6 | 24GB GDDR6X |
+| **Memory Bandwidth** | 1,555GB/s/2,039GB/s | 1,555GB/s/1,935GB/s | 1,555GB/s/2,039GB/s| 1,555GB/s/1,935GB/s | 600 GB/s | 936 GB/s |
 | **Interconnect Bandwidth** | NVLink 600GB/s | PCIe 64GB/s | NVLink 400GB/s | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s |
-| **TDP** | 400W | 300W | 400W | 300W | 150W | 350W |
+| **TDP** | 400W | 300W | 400W | 250W/300W | 150W | 350W |
 
 
 ### Hopper Architecture GPU Specifications
@@ -35,12 +35,12 @@
 | Parameter | GH200 | H200 | H100 | H100 PCIe | H800 | H800 PCIe | H20 Std | H20 Large Memory |
 |-----------|-------|------|------|-----------|------|-----------|---------|------------------|
 | **Form Factor** | 1*（H200+Grace）| SXM | SXM | PCIe | SXM | PCIe | SXM | SXM |
-| **FP8** | 1,979/3,958T | 1,979/3,958T | 1,979/3,958T | 800/1600T | 1000/2000T | 800/1600T | 296T | 296T |
-| **FP16** | 990/1,979T | 990/1,979T  | 990/1,979T | 800/1600T | 1000/2000T | 800/1600T | 148T | 148T |
-| **TF32** | 494/989T | 495/989T | 495/989T | 378/756T | 495/989T | 378/756T | 59.8T | 59.8T |
-| **FP64** | 34T | 34T | 34T |  | 1T |  | - | - |
-| **Memory Capacity** | 96/144G HBM3 | 141GB HBM3e | 80GB HBM3 | 80GB HBM3 | 80GB HBM3 | 80GB HBM3 | 96GB HBM3 | 141GB HBM3e |
-| **Memory Bandwidth** | 4/4.9TB/s | 4.8 TB/s | 3.35 TB/s | 2 TB/s | 3.35 TB/s | 2 TB/s | 4 TB/s | 4.8 TB/s |
+| **FP8** | 1,979/3,958T | 1,979/3,958T | 1,979/3,958T | 1670/3,341T | 1000/2000T | 800/1600T | 296T | 296T |
+| **FP16** | 990/1,979T | 990/1,979T  | 990/1,979T | 835/1671T | 1000/2000T | 800/1600T | 148T | 148T |
+| **TF32** | 494/989T | 495/989T | 495/989T | 417/835T | 495/989T | 378/756T | 59.8T | 59.8T |
+| **FP64** | 34T | 34T | 34T | 30T | 1T |  | - | - |
+| **Memory Capacity** | 96/144G HBM3 | 141GB HBM3e | 80GB HBM3 | 94GB HBM2e | 80GB HBM3 | 80GB HBM3 | 96GB HBM3 | 141GB HBM3e |
+| **Memory Bandwidth** | 4/4.9TB/s | 4.8 TB/s | 3.35 TB/s | 3.9 TB/s | 3.35 TB/s | 2 TB/s | 4 TB/s | 4.8 TB/s |
 | **Interconnect Bandwidth** | NVLink 900GB/s | NVLink 900GB/s | NVLink 900GB/s | PCIe 128GB/s | NVLink 400GB/s | PCIe 128GB/s | NVLink 900GB/s | NVLink 900GB/s |
 | **TDP** | - | 700W | 700W | 350W | 700W | 350W | 400W | 400W |
 
