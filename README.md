@@ -68,7 +68,7 @@
 
 | Parameter | GB300 | GB200| B300 | B200 | RTX 5090 |
 |-----------|-------|------|-------|------|------|
-| **Form Factor** | 2*Blackwell Ultra GPUs+1*Grace CPUs） | 2*Blackwell GPUs+1*Grace CPUs）| 2 Die | 2 Die | PCIe 5.0 |
+| **Form Factor** | 2\*Blackwell Ultra GPUs+1\*Grace CPUs | 2\*Blackwell GPUs+1\*Grace CPUs| 2 Die | 2 Die | PCIe 5.0 |
 | **FP4** | 15/20P | 10/20P|  13.5/14.25p | 9/18P|   | 
 | **FP8** |  5/10P |  5/10P|  4.5/9P | 4.5/9P|   |
 | **FP16/BF16** | 2.5/5P | 2.5/5P| 2.2/4.5P |2.2/4.5P|  | 
