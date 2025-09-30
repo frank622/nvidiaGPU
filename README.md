@@ -21,7 +21,7 @@
 | Parameter | A100 | A100 PCIe | A800 | A800 PCIe | A10 | RTX 3090 |
 |-----------|------|-----------|------|-----------|-----|----------|
 | **Form Factor** | SXM | PCIe | SXM | PCIe | PCIe | PCIe |
-| **FP16** | 300/600T | 300/600T | 300/600T | 300/600T | 125T/250T | -|
+| **FP16** | 312/624T | 312/624T | 312/624T | 312/624T | 125T/250T | -|
 | **TF32** | 156/312T | 156/312T | 156/312T | 156/312T | 62.5T/125T | -|
 | **FP64** | 19.5T | 19.5T | 19.5T | 19.5T | - | - |
 | **Memory Capacity** | 80GB HBM2e | 80GB HBM2e | 80GB HBM2e | 80GB HBM2e | 24GB GDDR6 | 24GB GDDR6X |
@@ -35,16 +35,18 @@
 | Parameter | GH200 | H200 | H100 | H100 PCIe | H800 | H800 PCIe | H20 Std | H20 Large Memory |
 |-----------|-------|------|------|-----------|------|-----------|---------|------------------|
 | **Form Factor** | 1*（H200+Grace）| SXM | SXM | PCIe | SXM | PCIe | SXM | SXM |
-| **FP8** | 1,979/3,958T | 1,979/3,958T | 1,979/3,958T | 800/1600T | 1000/2000T | 800/1600T | 148T | 148T |
+| **FP8** | 1,979/3,958T | 1,979/3,958T | 1,979/3,958T | 800/1600T | 1000/2000T | 800/1600T | 296T | 296T |
 | **FP16** | 990/1,979T | 990/1,979T  | 990/1,979T | 800/1600T | 1000/2000T | 800/1600T | 148T | 148T |
 | **TF32** | 494/989T | 495/989T | 495/989T | 378/756T | 495/989T | 378/756T | 59.8T | 59.8T |
-| **FP64** | 34T | 34T | 34T | 51T | 1000T | 800T | - | - |
+| **FP64** | 34T | 34T | 34T |  | 1T |  | - | - |
 | **Memory Capacity** | 96/144G HBM3 | 141GB HBM3e | 80GB HBM3 | 80GB HBM3 | 80GB HBM3 | 80GB HBM3 | 96GB HBM3 | 141GB HBM3e |
 | **Memory Bandwidth** | 4/4.9TB/s | 4.8 TB/s | 3.35 TB/s | 2 TB/s | 3.35 TB/s | 2 TB/s | 4 TB/s | 4.8 TB/s |
 | **Interconnect Bandwidth** | NVLink 900GB/s | NVLink 900GB/s | NVLink 900GB/s | PCIe 128GB/s | NVLink 400GB/s | PCIe 128GB/s | NVLink 900GB/s | NVLink 900GB/s |
-| **TDP** | 700W | 700W | 700W | 350W | 700W | 350W | 400W | 400W |
+| **TDP** | - | 700W | 700W | 350W | 700W | 350W | 400W | 400W |
 
-The NVIDIA GH200 NVL2 fully connects two GH200 Superchips with NVLink
+GH200 NVL2 fully connects two GH200 Superchips with NVLink
+GH200 NVL32=32*GH200 
+GH200 SupperPod=256*GH200
 
 ### Ada Architecture GPU Specifications
 
@@ -53,7 +55,6 @@ The NVIDIA GH200 NVL2 fully connects two GH200 Superchips with NVLink
 | **Form Factor** | PCIe | PCIe | PCIe | PCIe | PCIe |
 | **FP16** | 366/733T | 181/362T | 119.5T | 121/242T | - |
 | **TF32** | 181/366T | 90.5/181T | 59.8T | 60.5/121T | - |
-| **FP64** | - | - | - | - | - |
 | **Memory Capacity** | 48GB GDDR6x | 48GB GDDR6x | 48GB GDDR6x | 24GB GDDR6x | 24GB GDDR6x |
 | **Memory Bandwidth** | 864 GB/s | 864 GB/s | 864 GB/s | 300 GB/s | 1 TB/s |
 | **Interconnect Bandwidth** | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s | PCIe 64GB/s |
@@ -65,17 +66,20 @@ The NVIDIA GH200 NVL2 fully connects two GH200 Superchips with NVLink
 | Parameter | GB300 | GB200| B300 | B200 | B100 | RTX 5090 |
 |-----------|-------|------|-------|------|------|----------|
 | **Form Factor** | 2*Blackwell Ultra GPUs+1*Grace CPUs） | 2*Blackwell GPUs+1*Grace CPUs）| 2 Die | 2 Die  | 2 Die  | PCIe 5.0 |
-| **FP4 Dense/Sparse** | 180/360P | 180/360P | 5/10P| 2.25/4.5P| 1.8/3.5P | -| 
-| **FP8 Dense/Sparse** | 180/360P | 180/360P | 5/10P| 2.25/4.5P| 1.8/3.5P | -| 
-| **FP16/BF16 Dense/Sparse** | 180/360P | 180/360P | 5/10P| 2.25/4.5P| 1.8/3.5P | -| 
-| **TF32 Dense/Sparse** | 90/180P| 90/180P | 2.5/5P| 1.12/2.25P| 0.9/1.8P | - |
-| **FP64/FP64** | 100T | 2,880T | 90T | 40T | 30T | - |
-| **Memory Capacity** | 72*288GB HBM3e | 72*192GB HBM3e | 384GB HBM3e | 192GB HBM3e | 192GB HBM3e | 32GB GDDR7 | 
-| **Memory Bandwidth** | 576TB/s | up to 576TB/s | 16 TB/s | 8 TB/s | 8 TB/s | 1.8 TB/s |
-| **Interconnect Bandwidth** | - | -| NVLink 3.6 TB/s | NVLink 1.8 TB/s | NVLink 1.8 TB/s | PCIe 128GB/s | 
-| **TDP** | - | -| 2700W | 1000W | 700W | 575W |
+| **FP4 Dense/Sparse** |  | 20P |  | 9P| 1.8/3.5P | -| 
+| **FP8 Dense/Sparse** |   | 10P |  |4.5P | 1.8/3.5P | -| 
+| **FP16/BF16 Dense/Sparse** |  | 5P  |  | 2.25P| 1.8/3.5P | -| 
+| **TF32 Dense/Sparse** |  |  |  |  |   | - |
+| **FP64/FP64** |   |   |  |  |   | - |
+| **Memory Capacity** | 2*288GB HBM3e | 72*192GB HBM3e | 2*192GB HBM3e | 180/192GB HBM3e | 180/192GB HBM3e | 32GB GDDR7 | 
+| **Memory Bandwidth** |  | | 16 TB/s | 8 TB/s | 8 TB/s | 1.8 TB/s |
+| **Interconnect Bandwidth** | - | NVLink 3.6 TB/s | NVLink 3.6 TB/s | NVLink 1.8 TB/s | NVLink 1.8 TB/s | PCIe 128GB/s | 
+| **TDP** | - | 2700W   | - | 1000W | 700W | 575W |
 
-GB200 NVL72=18*Compute Node（4 Blackwell GPUs+2 Grace CPUs）;72 Blackwell GPUs
-
-GB300 NVL72=18*Compute Node（4 Blackwell Ultra GPUs+2 Grace CPUs）;72 Blackwell Ultra GPUs
+B200 Superchip,2 Die,2*Blackwell GPU
+GB200 Superchip,2*Blackwell GPU+1*Grace CPU
+HGX B200=2*[2*Blackwell Superchip(2 Die)+1*Grace CPU)];8 Blackwell GPUs+2Grace CPU (AWS p6-b200.48xlarge?)
+GB200 NVL72=32*GB200=18*Compute Node（4 Blackwell GPUs+2 Grace CPU）;72 Blackwell GPUs (AWS p6e-gb200.36xlarge,u-p6e-gb200x36,u-p6e-gb200x72?)
+GB200 SuperPod=288*GB200
+GB300 NVL72=18*Compute Node（4 Blackwell Ultra GPUs+2 Grace CPU）;72 Blackwell Ultra GPUs
 
