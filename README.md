@@ -44,7 +44,7 @@
 | **Interconnect Bandwidth** | NVLink 900GB/s | NVLink 900GB/s | NVLink 900GB/s | PCIe 128GB/s | NVLink 400GB/s | PCIe 128GB/s | NVLink 900GB/s | NVLink 900GB/s |
 | **TDP** | - | 700W | 700W | 350W | 700W | 350W | 400W | 400W |
 
-- HGX H100/H200 = 8 GPU soluton package
+- HGX H200 = 8*Hopper GPU soluton package
 - GH200 = Grace CPU+H200 GPU
 - GH200 NVL2 fully connects two GH200 Superchips with NVLink
 - GH200 NVL32 = 32 * GH200  
@@ -66,19 +66,22 @@
 
 ### Blackwell Architecture GPU Specifications(draft)
 
-| Parameter | GB300 | GB200| B300 | B200 | B100 | RTX 5090 |
-|-----------|-------|------|-------|------|------|----------|
-| **Form Factor** | 2*Blackwell Ultra GPUs+1*Grace CPUs） | 2*Blackwell GPUs+1*Grace CPUs）| 2 Die | 2 Die  | 2 Die  | PCIe 5.0 |
-| **Memory Capacity** | 2*288GB HBM3e | 2*192GB HBM3e | 2*192GB HBM3e | 180/192GB HBM3e | 180/192GB HBM3e | 32GB GDDR7 | 
-| **Memory Bandwidth** |  | | 16 TB/s | 8 TB/s | 8 TB/s | 1.8 TB/s |
-| **Interconnect Bandwidth** | - | NVLink 3.6 TB/s | NVLink 3.6 TB/s | NVLink 1.8 TB/s | NVLink 1.8 TB/s | PCIe 128GB/s | 
-| **TDP** | - | 2700W   | - | 1000W | 700W | 575W |
+| Parameter | GB300 | GB200| B300 | B200 | RTX 5090 |
+|-----------|-------|------|-------|------|------|
+| **Form Factor** | 2*Blackwell Ultra GPUs+1*Grace CPUs） | 2*Blackwell GPUs+1*Grace CPUs）| 2 Die | 2 Die | PCIe 5.0 |
+| **FP4** | 15/20P | 10/20P|  13.5/14.25p | 9/18P|   | 
+| **FP8** |  5/10P |  5/10P|  4.5/9P | 4.5/9P|   |
+| **FP16/BF16** | 2.5/5P | 2.5/5P| 2.2/4.5P |2.2/4.5P|  | 
+| **TF32** | 1.25/2.5P | 1.25/2.5P|  1.1/2.2P | 1.1/2.2P|  | 
+| **FP64/TF64** | 1.38T | 40T|  1.2T | 37T|   | 
+| **Memory Capacity** | 288GB HBM3e | 192GB HBM3e | 270GB HBM3e | 180/192GB HBM3e | 32GB GDDR7 | 
+| **Memory Bandwidth** | 8 TB/s |8 TB/s | 7.7 TB/s | 8 TB/s | 1.8 TB/s |
+| **Interconnect Bandwidth** |NVLink 3.6 TB/s  | NVLink 3.6 TB/s | NVLink 3.6 TB/s | NVLink 1.8 TB/s| PCIe 128GB/s | 
+| **TDP** | - | 2700W  | 1100W | 1000W | 575W |  
 
-- B200 Superchip,2 Die,2*Blackwell GPU
-  
 - HGX B200=8x NVIDIA Blackwell GPUs (AWS p6-b200.48xlarge?)
 - HGX B300=8x NVIDIA Blackwell Ultra GPUs
-  
+- B200 Superchip,2 Die,2*Blackwell GPU
 - GB200 Superchip,2*Blackwell GPU+1*Grace CPU
 - GB200 NVL72=32*GB200=18*Compute Node（4 Blackwell GPUs+2 Grace CPU）->72 Blackwell GPUs+36*Grace CPUs (AWS p6e-gb200.36xlarge,u-p6e-gb200x36,u-p6e-gb200x72?)
 - GB200 SuperPod=288*GB200
