@@ -83,9 +83,9 @@
 - HGX B300=8x NVIDIA Blackwell Ultra GPUs
 - B200 Superchip,2 Die,2*Blackwell GPU
 - GB200 Superchip, 2\*Blackwell GPU+1\*Grace CPU
-- GB200 NVL72=32*GB200=18*Compute Node（4 Blackwell GPUs+2 Grace CPU）->72 Blackwell GPUs+36*Grace CPUs (AWS p6e-gb200?)
+- GB200 NVL72=32*GB200=18*Compute Node（4\*Blackwell GPUs+2\*Grace CPU）->72\*Blackwell GPUs+36\*Grace CPUs (AWS p6e-gb200?)
 - GB200 SuperPod=288*GB200
-- GB300 NVL72=18*Compute Node（4 Blackwell Ultra GPUs+2 Grace CPU）->72 Blackwell Ultra GPUs
+- GB300 NVL72=18*Compute Node（4\*Blackwell Ultra GPUs+2\*Grace CPU）->72\*Blackwell Ultra GPUs+36\*Grace CPUs 
 - blackwell-architecture: https://resources.nvidia.com/en-us-blackwell-architecture
 
 > For any questions, please contact me via email: **frank622@gmail.com**
