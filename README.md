@@ -66,18 +66,18 @@
 
 ### Blackwell Architecture GPU Specifications
 
-| Parameter | GB300 | GB200| B300 | B200 | RTX 5090 |
+| Parameter | GB300 | GB200| B300 | B200 | RTX pro 6000 Server Edition | RTX 5090 |
 |-----------|-------|------|-------|------|------|
-| **Form Factor** | 2\*Blackwell Ultra GPUs+1\*Grace CPUs | 2\*Blackwell GPUs+1\*Grace CPUs| 2 Die | 2 Die | PCIe 5.0 |
-| **FP4** | 15/20P | 10/20P|  13.5/14.25p | 9/18P|   | 
-| **FP8** |  5/10P |  5/10P|  4.5/9P | 4.5/9P|   |
-| **FP16/BF16** | 2.5/5P | 2.5/5P| 2.2/4.5P |2.2/4.5P|  | 
-| **TF32** | 1.25/2.5P | 1.25/2.5P|  1.1/2.2P | 1.1/2.2P|  | 
-| **FP64/TF64** | 1.38T | 40T|  1.2T | 37T|   | 
-| **Memory Capacity** | 279GB HBM3e/GB300 NVL72:20TB | 186GB HBM3e/GB200 NVL72:13.5TB | 279GB HBM3e | 180/192GB HBM3e | 32GB GDDR7 | 
-| **Memory Bandwidth** | 8 TB/s |8 TB/s | 7.7 TB/s | 8 TB/s | 1.8 TB/s |
-| **Interconnect Bandwidth** |NVLink 3.6 TB/s  | NVLink 3.6 TB/s | NVLink 3.6 TB/s | NVLink 1.8 TB/s| PCIe 128GB/s | 
-| **TDP** | - | 2700W  | 1100W | 1000W | 575W |  
+| **Form Factor** | 2\*Blackwell Ultra GPUs+1\*Grace CPUs | 2\*Blackwell GPUs+1\*Grace CPUs| 2 Die | 2 Die | PCIe 5.0 |PCIe 5.0 |
+| **FP4** | 15/20P | 10/20P|  13.5/14.25p | 9/18P|  4P |  | 
+| **FP8** |  5/10P |  5/10P|  4.5/9P | 4.5/9P|   | |
+| **FP16/BF16** | 2.5/5P | 2.5/5P| 2.2/4.5P |2.2/4.5P|  |  | 
+| **TF32** | 1.25/2.5P | 1.25/2.5P|  1.1/2.2P | 1.1/2.2P| 120T |  | 
+| **FP64/TF64** | 1.38T | 40T|  1.2T | 37T|   |  | 
+| **Memory Capacity** | 279GB HBM3e/GB300 NVL72:20TB | 186GB HBM3e/GB200 NVL72:13.5TB | 279GB HBM3e | 180/192GB HBM3e | 96 GB GDDR7 | 32GB GDDR7 | 
+| **Memory Bandwidth** | 8 TB/s |8 TB/s | 7.7 TB/s | 8 TB/s | 1.597TB/s | 1.8 TB/s | 
+| **Interconnect Bandwidth** |NVLink 3.6 TB/s  | NVLink 3.6 TB/s | NVLink 3.6 TB/s | NVLink 1.8 TB/s| PCIe 128GB/s | PCIe 128GB/s  | 
+| **TDP** | - | 2700W  | 1100W | 1000W | 600 W  |  575W| 
 
 - HGX B200=8x NVIDIA Blackwell GPUs (AWS p6-b200?)
 - HGX B300=8x NVIDIA Blackwell Ultra GPUs
